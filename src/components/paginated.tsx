@@ -30,7 +30,7 @@ const Paginated = ({ temples, itemsPerPage }: Props) => {
         <div className='pt-1 h-full pb-16 md:pb-20 relative'>
             <div className='flex flex-col gap-y-2'>
                 {currentItems && currentItems.map((val: string, index: number) =>
-                    <div className='flex items-center gap-x-3 bg-custom-navy py-2 px-3 rounded-lg hover:bg-custom-light-navy'>
+                    <div key={`${val}-${index}`} className='flex items-center gap-x-3 bg-custom-navy py-2 px-3 rounded-lg hover:bg-custom-light-navy'>
                         <div className='flex items-center justify-center rounded-lg w-8 h-8 text-lg font-semibold text-custom-white bg-custom-red'>{itemOffset + 1 + index}</div> <p className='text-custom-white'>{val}</p>
                     </div>
                 )}

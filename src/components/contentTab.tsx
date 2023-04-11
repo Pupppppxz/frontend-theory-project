@@ -51,8 +51,8 @@ const ContentTab = ({ temples, filter }: Props) => {
     return (
         <div>
             <div className='flex flex-col md:flex-row mt-4 gap-x-7 border-b-4 border-custom-black'>
-                {filteredProvince && filteredProvince.map((val: ITemple) => (
-                    <div onClick={() => setActiveTab(val?.province)} className={`py-3 px-4 ${activeTab === val.province ? "bg-custom-black" : "bg-custom-green"} text-custom-white first:rounded-t-xl md:rounded-t-xl cursor-pointer`}>{getProvinceName(val?.province)}</div>
+                {filteredProvince && filteredProvince.map((val: ITemple, index: number) => (
+                    <div key={`${val.province}-${index}`} onClick={() => setActiveTab(val?.province)} className={`py-3 px-4 ${activeTab === val.province ? "bg-custom-black" : "bg-custom-green"} text-custom-white first:rounded-t-xl md:rounded-t-xl cursor-pointer`}>{getProvinceName(val?.province)}</div>
                 ))}
             </div>
             <div className='min-h-[74vh] bg-custom-black rounded-b-lg px-2'>
