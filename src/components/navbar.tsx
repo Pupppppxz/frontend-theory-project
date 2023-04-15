@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useLocation, Location } from 'react-router-dom'
+import { Link, Location } from 'react-router-dom'
 import { AppName } from '../constants/defaultValue'
 
 type Props = {
@@ -8,7 +8,6 @@ type Props = {
 
 const Navbar = ({ location }: Props) => {
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false)
-    // const location = useLocation()
 
     return (
         <div className='relative overflow-y-hidden'>

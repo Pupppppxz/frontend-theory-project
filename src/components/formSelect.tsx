@@ -1,7 +1,7 @@
 import React from "react";
 import Select, { GroupBase, OptionsOrGroups, PropsValue } from "react-select";
-import { ISelectOption } from "interfaces/form";
-import { ValueType } from 'react-select/lib/types';
+// import { ISelectOption } from "interfaces/form";
+// import { ValueType } from 'react-select/lib/types';
 
 interface CustomSelectProps {
     id: string;
@@ -26,7 +26,7 @@ export const CustomSelect = ({
     onBlur,
     placeholder
 }: CustomSelectProps) => {
-    const handleChange = (val: ValueType<ISelectOption>) => {
+    const handleChange = (val: any) => {
         onChange(name, val);
     };
 

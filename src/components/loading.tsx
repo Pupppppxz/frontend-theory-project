@@ -1,13 +1,13 @@
 import React from 'react'
 import FadeIn from "react-fade-in";
 import Lottie from "react-lottie";
-import * as LoadingAnimation from '../assets/lottie-loading-animation.json'
-import * as LoadingSuccess from '../assets/lottie-loading-success.json'
+import LoadingAnimation from '../assets/lottie-loading-animation.json'
+import LoadingSuccess from '../assets/lottie-loading-success.json'
 
 const options = {
     loop: true,
     autoplay: true,
-    animationData: LoadingAnimation?.default,
+    animationData: LoadingAnimation,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }
@@ -16,7 +16,7 @@ const options = {
 const options1 = {
     loop: true,
     autoplay: true,
-    animationData: LoadingSuccess?.default,
+    animationData: LoadingSuccess,
     rendererSettings: {
         preserveAspectRatio: "xMidYMid slice"
     }

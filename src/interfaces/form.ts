@@ -1,4 +1,4 @@
-import { ValueType } from 'react-select/lib/types';
+// import { ValueType } from 'react-select/lib/types';
 
 export interface ISelectOption {
     value: string | undefined;
@@ -6,5 +6,5 @@ export interface ISelectOption {
 }
 
 export interface IDefaultValueType {
-    provinces: ValueType<ISelectOption>
+    provinces: any
 }
